@@ -1,0 +1,398 @@
+body {
+    margin: 0%;
+    font-family: "Poppins", sans-serif;
+    background-color: #ccdbfd;
+    color: black;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+header {
+    padding: 5px 4px;
+    background-color: #e2eafc;
+    align-items: center;
+    scroll-behavior: smooth;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    z-index: 2;
+}
+
+header nav {
+    grid-column: 7 / span 6;
+    justify-self: right;
+}
+
+.navbar {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 15px;
+    padding-right: 1px;
+    scroll-behavior: smooth;
+
+}
+
+.navbar button {
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+navbar button:hover {
+    color: #a4b9e4;
+}
+
+#menu-icon {
+    font-size: 2rem;
+    color: #abc4ff;
+    display: none;
+    justify-self: right;
+    align-self: right;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.grid_2 {
+    display: grid;
+}
+
+.home {
+    padding-left: 20px;
+    margin: 30px;
+    max-width: 1500px;
+    background-color: #c1d3fe;
+    border-radius: 20px 20px 20px 20px;
+    text-align: center;
+}
+
+.home-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 30px;
+}
+
+.home-img img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    overflow: hidden;
+    align-items: center;
+    margin: auto;
+    justify-self: center;
+    display: block;
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+.home-content h2 {
+    font-size: 20%;
+    font-weight: 700;
+}
+
+.social-media a {
+    font-size: 2rem;
+    margin: 10px;
+    color: #618df5;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-media a i {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.social-media a:hover {
+    transform: scale(1.2);
+    color: #abc4ff;
+}
+
+.about {
+    padding-left: 10px;
+    background-color: #c1d3fe;
+    border-radius: 20px 20px 20px 20px;
+    margin: 30px;
+}
+
+.projects {
+    padding-left: 10px;
+    background-color: #c1d3fe;
+    border-radius: 20px 20px 20px 20px;
+    margin: 30px;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #b6ccfe;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.project-card h3 {
+    margin: 15px 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.project-card p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.project-card a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #7e9add;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project-card a:hover {
+    background-color: #a4b9e4;
+}
+
+.skills-section {
+    text-align: center;
+    padding-left: 10px;
+    border-radius: 20px 20px 20px 20px;
+    margin: 30px;
+    background-color: #c1d3fe;
+}
+
+.skills-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill {
+    width: 120px;
+    text-align: center;
+}
+
+.skill img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.skill p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.skill img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.contact {
+    padding-left: 10px;
+    background-color: #c1d3fe;
+    border-radius: 20px 20px 20px 20px;
+    margin: 30px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 28px;
+    margin: auto;
+    padding-bottom: 10px;
+    color: #333;
+
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form label {
+    font-weight: bold;
+    margin: auto;
+}
+
+form input,
+form textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 50%;
+    margin: auto;
+}
+
+form button {
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 50%;
+    margin: auto;
+}
+
+form button:hover {
+    background: #0056b3;
+
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .footer-content .social-icons {
+    margin: 15px 0;
+}
+
+footer .social-icons a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+
+footer .social-icons a:hover {
+    color: #a4b9e4;
+}
+
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #bbb;
+}
+
+
+footer a {
+    color: #c1d3fe;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #a4b9e4;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #e2eafc;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        padding: 10px;
+    }
+
+    #menu-icon {
+        display: block;
+
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+    .skill {
+        width: 100px;
+    }
+
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-2.4rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

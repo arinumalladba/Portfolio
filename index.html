@@ -1,0 +1,176 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Munira Abdalla | Web Developer</title>
+</head>
+
+<body>
+    <!-- header section-->
+
+    <header class="grid">
+
+
+
+        <a href="#" class="logo">MA</a>
+
+        <!-- Navigation section - needs to include - Name on left then on right: Home, About Me, Projects, Skills and
+                contact me buttons + hamburger menu-->
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home"><button>Home</button></a>
+            <a href="#about"><button>About Me</button></a>
+            <a href="#projects"><button>Projects</button></a>
+            <a href="#skills-section"><button>Skills</button></a>
+            <a href="#contact"><button>Contact Me</button></a>
+        </nav>
+
+    </header>
+
+    <!-- Main Section - has to include - text "Hello, I'm Munira Abdalla" then sentence
+            underneath "Aspiring Junior Developer" and socials. About me - has a box around it that is a different
+            colour to background colour of whole page includes a description of me. Projects - section has a box around
+            it includes three projects: Yuki diary, Updated memory game, Python expense tracker and underneath the
+            images of them is a description of what they are and what I used to build them and link to github pages
+            site. Skills - tech stack images medium size. Contact me - form in its own box-->
+    <main class="grid_2">
+
+        <section class="home" id="home">
+            <div class="home-content">
+                <h1>Hello, I'm Munira Abdalla</h1>
+            </div>
+            <!-- add professional image-->
+            <div class="home-img">
+                <img src="https://i.postimg.cc/Xqndsbrj/IMG-0199.jpg" alt="">
+            </div>
+            <h2>Aspiring Junior developer who is passionate about all things FemTech.</h2>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/munira-abdalla/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/arinumalladba"><i class="fa-brands fa-square-github"></i></a>
+            </div>
+        </section>
+
+        <!-- About me - description about myself - professional e.g Passionate about women's health. Gained
+                    fundamental skills at JustIT as I would like to blend my passions together. (include skills - HTML5,
+                    CSS, JavaScript, Python), hobbies (reading, swimming, painting, pottery and gaming) -->
+        <section class="about" id="about">
+            <h2>Who is Munira?</h2>
+            <p>I'm a previous Biomedical Sciences student who is passionate about women's health and tech. I have
+                completed a 12 week intensive Software Development bootcamp to build my skills after taking a break from
+                University. I have skills in HTML5, CSS, JavaScript, MySQL and Python. I am an avid reader, lover of
+                cats and
+                painting. I am very interested in FemTech and hope to make an impact in the industry in the future. </p>
+        </section>
+
+        <!-- Projects - Yuki diary, Memory game V2, Python expense tracker. They will be their own cards with description underneath and link leading to the actual site attached.-->
+        <section class="projects" id="projects">
+            <h2>My Projects</h2>
+            <div class="projects-container">
+                <!-- Project 1 - Yuki Diary-->
+                <div class="project-card">
+                    <img src="https://i.postimg.cc/NMBY4gF4/IMG-0132.jpg" alt="">
+                    <h3>Yuki's Diary</h3>
+                    <p>This is the first project I created it's a diary for my cat Yuki. I used HTML5 and CSS to create
+                        it.</p>
+                    <a href="https://arinumalladba.github.io/YukiDiary/" target="_blank">View Project</a>
+                </div>
+                <!-- Project 2 - Memory game v2-->
+                <div class="project-card">
+                    <img src="https://i.postimg.cc/1XzQkJpV/IMG-0135.jpg" alt="">
+                    <h3>Memory Game</h3>
+                    <p>This is a memory I created to build on my skills in HTML5, CSS and JavaScript.</p>
+                    <a href="https://arinumalladba.github.io/memoryGameV2/" target="_blank">View Project</a>
+                </div>
+                <!-- Python Expense Tracker-->
+                <div class="project-card">
+                    <img src="https://i.postimg.cc/wBhgLtqM/IMG-0136.jpg" alt="">
+                    <h3>Expense Tracker</h3>
+                    <p>This is the expense tracker I created using Python.</p>
+                    <a href="https://discordapp.com/channels/@me/1011038479033057281/1290720637106524302"
+                        target="_blank">View Project</a>
+                </div>
+            </div>
+        </section>
+        <!-- Skills - tech stack images medium size.-->
+        <section class="skills-section" id="skills-section">
+            <h2>My Tech Stack</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                    <p>HTML5</p>
+                </div>
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                    <p>CSS3</p>
+                </div>
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                        alt="JavaScript">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                        alt="Python">
+                    <p>Python</p>
+                </div>
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                    <p>MySQL</p>
+                </div>
+            </div>
+        </section>
+        <!-- Contact me - form-->
+        <section class="contact" id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+        <!-- Footer - has to include button for socials+email and copyright-->
+        <footer>
+            <div class="footer-content">
+                <p>Follow me on social media:</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/munira-abdalla/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/arinumalladba" target="_blank">
+                        <i class="fab fa-github"></i>
+                        GitHub
+                    </a>
+                    <a href="mailto:muniraabdalla@hotmail.co.uk">
+                        <i class="fas fa-envelope"></i>
+                        Email
+                    </a>
+                </div>
+                <p>&copy; 2024 Munira Abdalla. All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
